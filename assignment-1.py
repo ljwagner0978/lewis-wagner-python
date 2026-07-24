@@ -24,9 +24,9 @@ print(f"Hi, {x}! You are approximately {str((date.year - int(y)))} years old.")
 
 # Section 3
 
-number_1 = input("Please provide a number: ")
-number_2 = input("Please provide a second number: ")
-result = str(float(number_1)*float(number_2))
+number_1 = float(input("Please provide a number: "))
+number_2 = float(input("Please provide a second number: "))
+result = number_1 * number_2
 
 print(f"{number_1} × {number_2} = {result}")
 
@@ -39,14 +39,13 @@ quantity = 2
 total_cost = round((food_price * quantity), 2)
 
 print("===========================")
-print("        RECEIPT            ")
-print("===========================")
-
-print(f"Item: {food_item}")
-print(f"Price: ${food_price}")
-print(f"Quantity: {quantity}")
+print("         RECEIPT           ")
+print("===========================")   
+print(f"Item:      {food_item}")
+print(f"Price:     ${food_price}")
+print(f"Quantity:  {quantity}")
 print("---------------------------")
-print(f"Total:   {total_cost}")
+print(f"Total:     ${total_cost}")
 print("===========================")
 
 # Section 5
@@ -58,9 +57,9 @@ fun_fact_s5 = input("Please provide one fun fact about yourself: ")
 birth_year_s5 = input("Please provide your birth year: ")
 
 print("╔══════════════════════════════╗")
-print(f"     PROFILE: {name_s5}        ")
+print(f"      PROFILE: {name_s5}       ")
 print("╚══════════════════════════════╝")
-print(f" Hometown:  {hometown_s5}")
-print(f" Hobby:     {hobby_s5}")
-print(f" Fun fact:  {fun_fact_s5}")
-print(f" Age:       {(date.year - int(birth_year_s5))}")
+print(f"Hometown:   {hometown_s5}")
+print(f"Hobby:      {hobby_s5}")
+print(f"Fun fact:   {fun_fact_s5}.")
+print(f"Age:        {(date.year - int(birth_year_s5))}")
